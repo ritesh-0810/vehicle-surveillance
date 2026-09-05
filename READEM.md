@@ -57,6 +57,6 @@ The model achieved **94.2% accuracy** in license plate detection across test dat
 
 ## 👤 Author
 
-**Sai Narendra Joshi**
-📧 JoshiSaish2004@gmail.com
-🔗 [LinkedIn](https://linkedin.com/in/sai-joshi-423450380)
+**Ritesh Zalte**
+📧 riteshzalte345@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/ritesh-zalte-b6944037b)
