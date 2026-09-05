@@ -1,0 +1,169 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --text-light: #7f8c8d;
+  --background-color: #f5f7fa;
+  --card-background: #ffffff;
+  --border-color: #e0e0e0;
+  --error-color: #e74c3c;
+  --success-color: #2ecc71;
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+.locationSearch {
+  position: relative;
+  width: 100%;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237f8c8d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.9rem 1rem 0.9rem 2.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: var(--transition);
+  color: var(--text-color);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  background-color: #ffffff;
+}
+
+.searchInput::placeholder {
+  color: #bdc3c7;
+}
+
+.spinner {
+  position: absolute;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(52, 152, 219, 0.2);
+  border-radius: 50%;
+  border-top-color: var(--secondary-color);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.suggestions {
+  position: absolute;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 5px 0 0;
+  padding: 0;
+  list-style: none;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+}
+
+.suggestions li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.suggestions li:hover {
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.suggestions li:last-child {
+  border-bottom: none;
+}
+
+.suggestionContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.locationPin {
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233498db' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'%3E%3C/path%3E%3Ccircle cx='12' cy='10' r='3'%3E%3C/circle%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+.suggestionText {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestionText strong {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.suggestionText span {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.coordinates {
+  margin-top: 15px;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+}
+
+.coordinates h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.coordinates p {
+  margin: 0.25rem 0;
+  color: var(--text-light);
+}
+
+.error {
+  color: var(--error-color);
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}

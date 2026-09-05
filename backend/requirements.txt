@@ -1,0 +1,56 @@
+# Core Flask dependencies
+Flask==2.3.3
+Flask-CORS==4.0.0
+Werkzeug==2.3.7
+
+# Database
+pymongo==4.5.0
+
+# Computer Vision and Image Processing
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+
+# YOLOv5 Model
+yolov5==7.0.13
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+
+# OCR Libraries
+easyocr==1.7.1
+pytesseract==0.3.10
+
+# Image Processing - Fixed Pillow version for EasyOCR compatibility
+Pillow==9.5.0
+numpy==1.24.4
+
+# Text Processing and String Matching
+python-Levenshtein==0.21.1
+
+# Environment Management
+python-dotenv==1.0.0
+
+# Utilities
+requests==2.31.0
+uuid
+
+# System utilities
+psutil==5.9.5
+
+# Hugging Face Hub for YOLOv5 model loading
+huggingface_hub==0.17.3
+
+# Additional dependencies for YOLOv5
+matplotlib==3.7.2
+seaborn==0.12.2
+pandas==2.0.3
+PyYAML==6.0.1
+ultralytics==8.0.196
+
+# For image preprocessing
+scipy==1.11.2
+scikit-image==0.21.0
+
+# Additional dependencies that might be needed
+tqdm==4.66.1
+gitpython==3.1.37

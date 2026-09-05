@@ -1,0 +1,28 @@
+# Core dependencies
+torch>=1.10.0
+torchvision>=0.11.0
+torchaudio>=0.10.0
+
+# YOLOv5 dependencies
+yolov5>=6.0.0
+numpy>=1.19.5
+pandas>=1.1.4
+matplotlib>=3.2.2
+seaborn>=0.11.0
+scipy>=1.4.1
+requests>=2.23.0
+tqdm>=4.64.0
+PyYAML>=5.3.1
+psutil>=5.9.0
+opencv-python>=4.5.5.64
+
+# EasyOCR dependencies
+easyocr>=1.7.0
+Pillow>=7.1.2
+scikit-image>=0.16.2
+python-bidi>=0.4.2
+shapely>=2.0.0
+
+# Utilities
+setuptools>=50.3.0
+future>=0.18.2
