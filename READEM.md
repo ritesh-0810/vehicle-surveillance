@@ -33,7 +33,7 @@ This project combines object detection and optical character recognition (OCR) t
 
 ```bash
 # Clone the repository
-git clone https://github.com/Saish118/vehicle-surveillance.git
+git clone https://github.com/ritesh-0810/vehicle-surveillance.git
 cd vehicle-surveillance
 
 # Install dependencies
